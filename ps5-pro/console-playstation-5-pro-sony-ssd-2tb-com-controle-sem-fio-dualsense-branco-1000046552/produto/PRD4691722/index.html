@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>
+    (function () {
+      var path = location.pathname;
+      var mark = path.indexOf("/ps5-pro");
+      var base = mark >= 0 ? path.slice(0, mark) : path.replace(/\/$/, "");
+      if (!base) base = "/";
+      if (base.charAt(base.length - 1) !== "/") base += "/";
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1a73e8" />
+  <title>Console PlayStation 5 Pro Sony, SSD 2TB, Com Controle Sem Fio DualSense, Branco - 1000046552 | Shopiving</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="icon-btn" id="open-menu" aria-label="Abrir menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="logo" href="ps5-pro" aria-label="Shopiving">
+        <span class="wordmark">shop<span>iving</span></span>
+      </a>
+      <form class="search" id="search-form" role="search">
+        <input id="search-input" type="search" placeholder="Busque por produtos, parceiros, voos e hotéis" aria-label="Campo de busca, faça um busca por produtos, passagens, hotéis" autocomplete="off" />
+        <button type="submit" aria-label="buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <div class="suggest" id="suggest"></div>
+      </form>
+      <button class="login-btn" id="open-login" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3.2"/><path d="M5 19c1.4-3 3.8-4.5 7-4.5S17.6 16 19 19"/></svg>
+        <span class="login-label">Fazer login</span>
+      </button>
+      <button class="cart-btn" id="open-cart" type="button" aria-label="Meu carrinho">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="club-banner">
+    <div class="club-banner-inner">
+      <p><strong>Clube Shopiving:</strong> a partir de R$ 47,41/mês. Assine o Clube e tenha benefícios exclusivos para assinantes.</p>
+      <button type="button" id="open-club">Conhecer o Clube</button>
+    </div>
+  </div>
+
+  <div id="page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Você está em">
+        <a href="ps5-pro">Início</a><span>›</span>
+        <a href="ps5-pro">Games</a><span>›</span>
+        <a href="ps5-pro">Console de Videogame</a><span>›</span>
+        <a href="ps5-pro">PlayStation 5</a><span>›</span>
+        <span id="crumb-current">Console PlayStation 5 Pro</span>
+      </nav>
+
+      <section class="pdp">
+        <div class="gallery">
+          <div class="thumbs" id="thumbs"></div>
+          <div class="stage">
+            <button class="fav" id="fav" type="button" aria-label="Favoritar">♡</button>
+            <img id="main-photo" alt="Console PlayStation 5 Pro Sony com controle DualSense branco" src="img/foto-1.jpg" />
+          </div>
+        </div>
+
+        <div class="buy">
+          <h1>Console PlayStation 5 Pro Sony, SSD 2TB, Com Controle Sem Fio DualSense, Branco - 1000046552</h1>
+          <div class="meta">
+            <span>Marca <a href="ps5-pro">Sony</a></span>
+            <span>Cód. do Produto: <b id="sku-label">SKU5863657</b></span>
+          </div>
+          <p class="seller">Vendido e entregue por: <b>KABUM</b></p>
+
+          <p class="choose-label">Escolha se você quer:</p>
+          <div class="modes" role="radiogroup" aria-label="Forma de pagamento">
+            <button class="mode" id="mode-points" type="button" role="radio" aria-checked="false">
+              <span class="radio"><i></i></span>
+              <span><strong>Usar pontos</strong><small>Pagar com pontos Shopiving</small></span>
+            </button>
+            <button class="mode active" id="mode-cash" type="button" role="radio" aria-checked="true">
+              <span class="radio"><i></i></span>
+              <span><strong>Ganhar pontos</strong><small>Pagar em dinheiro</small></span>
+            </button>
+          </div>
+
+          <div class="price-box hidden" id="price-points">
+            <div class="price-row">
+              <div class="price-main" id="club-points">308.292 <span>pontos</span></div>
+              <span class="club-tag">com Clube Shopiving</span>
+              <span class="badge">7% OFF</span>
+            </div>
+            <p class="was" id="list-points">347.783 pontos</p>
+            <p class="or-price">ou <b id="sale-points">321.696 pontos</b></p>
+          </div>
+
+          <div class="price-box" id="price-cash">
+            <div class="price-row">
+              <div class="price-main" id="cash-sale">R$&nbsp;1.800,00</div>
+              <span class="badge hidden" id="cash-off"></span>
+            </div>
+            <p class="was hidden" id="cash-list"></p>
+            <p class="installment" id="installment">Em até 10x de R$&nbsp;180,00 sem juros</p>
+            <div class="accrual-box">
+              <h3>Ganhe pontos pagando apenas em dinheiro</h3>
+              <div class="accrual-line">
+                <b>COM CLUBE SHOPIVING</b>
+                <span id="accrual-club">Você ganha 1.800 (1 por real)</span>
+              </div>
+              <div class="accrual-line">
+                <b>SEM CLUBE SHOPIVING</b>
+                <span id="accrual-default">Você ganha 1.800 (1 por real)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy-actions">
+            <div class="qty" aria-label="Quantidade">
+              <button type="button" id="qty-minus" aria-label="Diminuir">−</button>
+              <strong id="qty">1</strong>
+              <button type="button" id="qty-plus" aria-label="Aumentar">+</button>
+            </div>
+            <button class="btn-primary" id="buy-now" type="button">Comprar agora</button>
+          </div>
+          <button class="btn-ghost" id="add-cart" type="button">Adicionar ao carrinho</button>
+
+          <section class="ship">
+            <h2>Calcule seu frete</h2>
+            <div class="cep-row">
+              <input id="cep" inputmode="numeric" maxlength="9" placeholder="CEP" aria-label="Digite seu CEP" />
+              <button type="button" id="calc-cep">Calcular</button>
+            </div>
+            <p class="cep-help"><a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php" target="_blank" rel="noreferrer">Não sei meu CEP</a></p>
+            <div id="ship-result" class="ship-result"></div>
+          </section>
+
+          <section class="guarantee">
+            <h2>Garantia Shopiving</h2>
+            <details open>
+              <summary>Devolução grátis em até 7 dias</summary>
+              <p>Devolução grátis em até 7 dias se não gostar do produto.</p>
+            </details>
+            <details>
+              <summary>Compra garantida</summary>
+              <p>Compra garantida com dinheiro de volta se não receber sua compra.</p>
+            </details>
+            <details>
+              <summary>Ganhar pontos</summary>
+              <p>Comprando qualquer produto apenas em dinheiro você ganha pontos para usar com viagens e mais.</p>
+            </details>
+            <details>
+              <summary>Usar pontos</summary>
+              <p>Combine seus pontos com reais ou use apenas pontos para pagar.</p>
+            </details>
+          </section>
+          <button class="pay-link" id="open-pay" type="button">Ver opções de pagamento</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="below">
+      <div class="wrap">
+        <section class="block">
+          <h2>Descrição</h2>
+          <div class="desc collapsed" id="desc">
+            <h3>PlayStation 5 Pro</h3>
+            <p><strong>O Poder Supremo para a Nova Geração de Jogos.</strong> Eleve sua experiência de jogo a um patamar nunca antes imaginado com o Console PlayStation 5 Pro. Projetado para os jogadores mais exigentes, o PS5 Pro é a vanguarda da tecnologia de consoles, oferecendo um desempenho gráfico superior, velocidade incomparável e recursos de ponta. Com um massivo SSD de 2TB e o aclamado controle sem fio DualSense, este é o poder definitivo para dominar o universo dos games.</p>
+            <h3>Desempenho Extremo e Gráficos em 8K</h3>
+            <p>Prepare-se para uma revolução visual. O PlayStation 5 Pro redefine o realismo com seu poder de processamento aprimorado, capaz de entregar jogos em resolução 8K nativa e taxas de quadros ainda mais altas. A arquitetura avançada da GPU proporciona um Ray Tracing acelerado por hardware de nível superior, criando mundos com iluminação, sombras e reflexos de uma fidelidade impressionante.</p>
+            <h3>Armazenamento Massivo com SSD de 2TB</h3>
+            <p>Com o SSD de 2TB ultra-rápido, espaço não será mais uma preocupação. Instale e acesse uma biblioteca ainda maior de jogos AAA com velocidades de carregamento quase instantâneas. O PS5 Pro garante que você esteja sempre pronto para a ação, eliminando as barreiras entre você e seus universos digitais favoritos.</p>
+            <h3>Imersão Totalmente Aprimorada</h3>
+            <p>A experiência imersiva do PlayStation 5 Pro é levada ao limite. O controle sem fio DualSense continua a oferecer a incrível resposta tátil e gatilhos adaptáveis que colocam a sensação do jogo em suas mãos. Combinado com a tecnologia de Áudio 3D Tempest otimizada, cada som e cada movimento ganham uma nova dimensão de clareza e precisão.</p>
+            <h3>Pronto para o Futuro do Entretenimento</h3>
+            <p>O PS5 Pro não é apenas um console de videogame; é o centro do seu entretenimento. Além de oferecer a melhor plataforma para jogos, ele suporta streaming e reprodução de mídia em qualidade 8K. Desenvolvido para liderar a indústria por anos, este console é o investimento definitivo para quem busca o melhor em tecnologia, performance e experiências inesquecíveis.</p>
+          </div>
+          <button class="more" id="more-desc" type="button">Ver mais</button>
+        </section>
+
+        <section class="block">
+          <h2>Características</h2>
+          <table>
+            <tbody>
+              <tr><td>Garantia</td><td>12 meses de garantia</td></tr>
+              <tr><td>Modelo</td><td>Ssd 2 tb</td></tr>
+              <tr><td>Voltagem</td><td>Bivolt</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="block">
+          <h2>Avaliações</h2>
+          <p class="reviews-empty">Este produto ainda não recebeu avaliações.</p>
+          <div class="review-cta">
+            <div>
+              <strong>Já comprou algum produto?</strong>
+              <p>Sua avaliação ajuda outros clientes a escolherem melhor.</p>
+            </div>
+            <button type="button" id="rate-products">Avaliar meus produtos</button>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="carousel-head">
+            <h2>Produtos similares mais buscados</h2>
+            <div class="arrows">
+              <button type="button" id="prev-sim" aria-label="Anterior">‹</button>
+              <button type="button" id="next-sim" aria-label="Próximo">›</button>
+            </div>
+          </div>
+          <div class="track" id="similar"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap hidden" id="missing">
+    <section class="block">
+      <h2>Produto Indisponível</h2>
+      <p>A opção selecionada não está disponível no momento.</p>
+      <p><a class="pay-link" href="ps5-pro">Ver o PlayStation 5 Pro</a></p>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="wordmark footer-logo">shop<span>iving</span></p>
+        <h3>Siga a Shopiving</h3>
+        <p>Instagram · TikTok · WhatsApp · Telegram · Youtube · Facebook</p>
+        <h3>Formas de pagamento</h3>
+        <div class="pay-row">
+          <span class="pay-pill">Visa</span>
+          <span class="pay-pill">MasterCard</span>
+          <span class="pay-pill">Elo</span>
+          <span class="pay-pill">Amex</span>
+          <span class="pay-pill">Diners</span>
+          <span class="pay-pill">Hipercard</span>
+          <span class="pay-pill">Pix</span>
+        </div>
+      </div>
+      <div>
+        <h3>Usar pontos</h3>
+        <a href="ps5-pro">Com viagens</a>
+        <a href="ps5-pro">Com serviços</a>
+        <a href="ps5-pro">Com Shopping Shopiving</a>
+        <a href="ps5-pro">Em nossos parceiros</a>
+        <a href="ps5-pro">Com doações</a>
+        <a href="ps5-pro">Pagar com pontos via Pix</a>
+        <a href="ps5-pro">Pontos Viram Dinheiro</a>
+        <a href="ps5-pro">Pontos + Dinheiro</a>
+      </div>
+      <div>
+        <h3>Juntar pontos</h3>
+        <a href="ps5-pro">Com sites parceiros</a>
+        <a href="ps5-pro">Com instituições financeiras</a>
+        <a href="ps5-pro">Com o Clube Shopiving</a>
+        <a href="ps5-pro">Com passagens aéreas</a>
+        <a href="ps5-pro">Com cruzeiros</a>
+        <h3>Transferir seus pontos</h3>
+        <a href="ps5-pro">Para outros programas</a>
+        <a href="ps5-pro">Para um amigo</a>
+        <a href="ps5-pro">Para Shopiving</a>
+      </div>
+      <div>
+        <h3>Institucional</h3>
+        <a href="ps5-pro">Fale conosco</a>
+        <a href="ps5-pro">Regulamentos</a>
+        <a href="ps5-pro">Dicas de segurança</a>
+        <a href="ps5-pro">Código de conduta</a>
+        <a href="ps5-pro">Código de ética</a>
+        <a href="ps5-pro">Imprensa</a>
+        <a href="ps5-pro">Políticas de privacidade</a>
+        <a href="ps5-pro">Trabalhe conosco</a>
+        <a href="ps5-pro">Transparência salarial</a>
+      </div>
+      <div>
+        <h3>Para empresas</h3>
+        <a href="ps5-pro">Shopiving empresas</a>
+        <a href="ps5-pro">Pontos para incentivar</a>
+        <a href="ps5-pro">Pontos para vender mais</a>
+        <a href="ps5-pro">Pontos para fidelizar</a>
+        <h3>Aplicativo</h3>
+        <a href="ps5-pro">Vantagens do nosso app</a>
+        <a href="ps5-pro">Comprar pontos</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div>Shopiving · Todos os direitos reservados</div>
+    </div>
+  </footer>
+
+  <div class="drawer-back" id="menu-back"></div>
+  <aside class="menu" id="menu" aria-label="Menu">
+    <div class="panel-head">
+      <h2>A Shopiving te dá as boas vindas</h2>
+      <button type="button" id="close-menu" aria-label="Fechar">×</button>
+    </div>
+    <nav>
+      <button class="menu-link" type="button" id="menu-login">Fazer login</button>
+      <button class="menu-link" type="button" id="menu-account">Criar Conta</button>
+      <a href="ps5-pro">Ofertas</a>
+      <a href="ps5-pro">Trocar pontos</a>
+      <a href="ps5-pro">Juntar pontos</a>
+      <a class="active" href="ps5-pro">Shopping Shopiving</a>
+      <a href="ps5-pro">Viagens</a>
+      <a href="ps5-pro">Clube Shopiving</a>
+      <a href="ps5-pro">Compra e Turbo</a>
+      <a href="ps5-pro">Central de ajuda</a>
+      <a href="ps5-pro">Para empresas</a>
+    </nav>
+  </aside>
+
+  <div class="drawer-back" id="cart-back"></div>
+  <aside class="drawer" id="cart" aria-label="Carrinho">
+    <div class="panel-head">
+      <h2>Meu carrinho</h2>
+      <button type="button" id="close-cart" aria-label="Fechar">×</button>
+    </div>
+    <div class="drawer-body" id="cart-body"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cart-total">0 pontos</strong></div>
+      <button class="btn-primary" id="checkout" type="button" style="width:100%">Continuar</button>
+    </div>
+  </aside>
+
+  <div class="modal-back" id="modal-back"></div>
+  <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <header>
+      <h2 id="modal-title">Formas de pagamento</h2>
+      <button type="button" id="close-modal" aria-label="Fechar">×</button>
+    </header>
+    <div class="body" id="modal-body"></div>
+  </section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
