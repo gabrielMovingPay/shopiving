@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>
+    (function () {
+      var path = location.pathname;
+      var mark = path.indexOf("/ps5-pro");
+      var base = mark >= 0 ? path.slice(0, mark) : path.replace(/\/$/, "");
+      if (!base) base = "/";
+      if (base.charAt(base.length - 1) !== "/") base += "/";
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1a73e8" />
+  <title>Página não encontrada | Shopiving</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="ps5-pro" aria-label="Shopiving">
+        <span class="wordmark">shop<span>iving</span></span>
+      </a>
+    </div>
+  </header>
+  <main class="not-found">
+    <div>
+      <h1>404</h1>
+      <h2>Página não encontrada</h2>
+      <p>O endereço que você abriu não existe na Shopiving.</p>
+      <a class="btn-primary" href="ps5-pro">Ver PlayStation 5 Pro</a>
+    </div>
+  </main>
+</body>
+</html>
